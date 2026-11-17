@@ -1,0 +1,64 @@
+.home-stage-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.stage-win-slot {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+}
+
+/* Hover lift effect for landing stage windows */
+.stage-win-slot:hover {
+  z-index: 20;
+}
+
+/* Mobile Stacked Layout (Section 10) */
+@media (max-width: 900px) {
+  .home-stage-container {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding: 12px 14px 75px 14px;
+    gap: 14px;
+    overflow-y: visible;
+  }
+
+  .stage-win-slot {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    left: auto !important;
+    top: auto !important;
+  }
+
+  /* Specific stacking order from Section 10:
+     1. Welcome
+     2. Stats
+     3. About_Me
+     4. Featured_Projects
+     5. Now_Playing
+     6. Currently_Exploring
+     7. Achievements
+     8. Activity.log
+     9. To_Do
+     10. Sleeping Cat
+  */
+  .slot-welcome { order: 1; min-height: 280px; }
+  .slot-stats { order: 2; min-height: 90px; }
+  .slot-about { order: 3; min-height: 140px; }
+  .slot-projects { order: 4; min-height: 160px; }
+  .slot-player { order: 5; min-height: 140px; }
+  .slot-exploring { order: 6; min-height: 160px; }
+  .slot-achievements { order: 7; min-height: 120px; }
+  .slot-activity { order: 8; min-height: 150px; }
+  .slot-todo { order: 9; min-height: 140px; }
+  .slot-cat { order: 10; }
+}

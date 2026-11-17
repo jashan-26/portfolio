@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <g id="sparkle-gold">
+      <path d="M 0,-14 Q 0,0 14,0 Q 0,0 0,14 Q 0,0 -14,0 Q 0,0 0,-14 Z" fill="#F2B632" />
+      <circle cx="0" cy="0" r="3" fill="#FFFBE6" />
+    </g>
+    <g id="sparkle-white">
+      <path d="M 0,-12 Q 0,0 12,0 Q 0,0 0,12 Q 0,0 -12,0 Q 0,0 0,-12 Z" fill="#FFFFFF" />
+      <circle cx="0" cy="0" r="2.5" fill="#FFF" />
+    </g>
+    <g id="sparkle-small">
+      <path d="M 0,-8 Q 0,0 8,0 Q 0,0 0,8 Q 0,0 -8,0 Q 0,0 0,-8 Z" fill="#FFFFFF" opacity="0.85" />
+    </g>
+  </defs>
+
+  <!-- Array of sparkles matching screenshot positioning -->
+  <use href="#sparkle-white" x="150" y="80" transform="scale(1.1)" />
+  <use href="#sparkle-gold" x="220" y="160" transform="scale(0.9)" />
+  <use href="#sparkle-white" x="260" y="60" transform="scale(0.8)" />
+  <use href="#sparkle-gold" x="180" y="320" transform="scale(1.2)" />
+  <use href="#sparkle-white" x="80" y="480" transform="scale(0.9)" />
+  <use href="#sparkle-small" x="140" y="620" />
+  <use href="#sparkle-gold" x="100" y="740" transform="scale(1.0)" />
+
+  <use href="#sparkle-white" x="480" y="60" transform="scale(1.2)" />
+  <use href="#sparkle-gold" x="650" y="80" transform="scale(0.8)" />
+  <use href="#sparkle-white" x="880" y="70" transform="scale(1.0)" />
+  <use href="#sparkle-gold" x="1040" y="75" transform="scale(1.1)" />
+
+  <use href="#sparkle-white" x="1150" y="120" transform="scale(0.9)" />
+  <use href="#sparkle-gold" x="1320" y="65" transform="scale(1.2)" />
+  <use href="#sparkle-white" x="1460" y="160" transform="scale(1.0)" />
+  <use href="#sparkle-white" x="1540" y="220" transform="scale(0.8)" />
+
+  <use href="#sparkle-gold" x="1490" y="350" transform="scale(1.1)" />
+  <use href="#sparkle-white" x="1520" y="480" transform="scale(0.9)" />
+  <use href="#sparkle-gold" x="1380" y="580" transform="scale(1.0)" />
+  <use href="#sparkle-white" x="1510" y="700" transform="scale(1.2)" />
+
+  <!-- Round stardust dots -->
+  <circle cx="90" cy="120" r="2" fill="#FFF" opacity="0.8" />
+  <circle cx="170" cy="230" r="2.5" fill="#FFEAA7" opacity="0.9" />
+  <circle cx="310" cy="90" r="2" fill="#FFF" opacity="0.7" />
+  <circle cx="580" cy="50" r="2.5" fill="#FFF" opacity="0.8" />
+  <circle cx="750" cy="65" r="2" fill="#FFEAA7" opacity="0.8" />
+  <circle cx="1200" cy="80" r="2" fill="#FFF" opacity="0.7" />
+  <circle cx="1400" cy="110" r="2.5" fill="#FFF" opacity="0.9" />
+  <circle cx="1550" cy="140" r="2" fill="#FFEAA7" opacity="0.8" />
+  <circle cx="1440" cy="420" r="2" fill="#FFF" opacity="0.8" />
+  <circle cx="1560" cy="620" r="2.5" fill="#FFEAA7" opacity="0.9" />
+</svg>

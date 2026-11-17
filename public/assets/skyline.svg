@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 220" fill="none">
+  <!-- Distant buildings layer -->
+  <path d="M 10 220 L 10 140 L 25 140 L 25 105 L 35 105 L 35 140 L 45 140 L 45 125 L 60 125 L 60 150 L 70 150 L 70 110 L 80 85 L 90 110 L 90 160 L 110 160 L 110 95 L 125 95 L 125 70 L 130 50 L 135 70 L 135 155 L 155 155 L 155 130 L 175 130 L 175 165 L 195 165 L 195 120 L 210 120 L 210 170 L 230 170 L 230 145 L 250 145 L 250 220 Z" fill="#6B4F8B" opacity="0.45" />
+  
+  <!-- Antenna needles -->
+  <line x1="30" y1="105" x2="30" y2="75" stroke="#6B4F8B" stroke-width="2" opacity="0.5" />
+  <line x1="130" y1="50" x2="130" y2="25" stroke="#6B4F8B" stroke-width="2.5" opacity="0.5" />
+  <circle cx="130" cy="23" r="2.5" fill="#FFA5D2" opacity="0.8" />
+  <line x1="202" y1="120" x2="202" y2="95" stroke="#6B4F8B" stroke-width="1.8" opacity="0.5" />
+
+  <!-- Foreground buildings layer -->
+  <path d="M 0 220 L 0 155 L 20 155 L 20 125 L 38 125 L 38 165 L 55 165 L 55 140 L 68 140 L 68 120 L 76 100 L 84 120 L 84 175 L 100 175 L 100 135 L 120 135 L 120 100 L 126 80 L 132 100 L 132 170 L 150 170 L 150 145 L 168 145 L 168 180 L 185 180 L 185 135 L 205 135 L 205 185 L 225 185 L 225 155 L 245 155 L 245 220 Z" fill="#4B336B" opacity="0.6" />
+</svg>

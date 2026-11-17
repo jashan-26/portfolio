@@ -1,0 +1,174 @@
+.os-wallpaper {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+}
+
+.sky-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    #2B1B4D 0%,
+    #412C68 22%,
+    #5F3B84 45%,
+    #884E9C 68%,
+    #BD6EAF 85%,
+    #E89EC8 100%
+  );
+}
+
+.wallpaper-sparkles {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.95;
+  z-index: 1;
+}
+
+/* Twinkle keyframes */
+@keyframes starTwinkle {
+  0%, 100% {
+    opacity: 0.9;
+    filter: brightness(1);
+  }
+  50% {
+    opacity: 0.65;
+    filter: brightness(1.25);
+  }
+}
+
+.star-twinkle {
+  animation: starTwinkle 7s ease-in-out infinite alternate;
+}
+
+/* Small Ringed Planet (Top Left) */
+.decor-planet-small-ringed {
+  position: absolute;
+  left: 14%;
+  top: 5.5%;
+  width: 5.5vw;
+  max-width: 85px;
+  min-width: 45px;
+  z-index: 1;
+  opacity: 0.85;
+}
+.decor-planet-small-ringed img {
+  width: 100%;
+  height: auto;
+}
+
+/* Large Pink Planet (Left, partly behind Welcome window) */
+.decor-planet-large-left {
+  position: absolute;
+  left: 11%;
+  top: 16%;
+  width: 12vw;
+  max-width: 180px;
+  min-width: 90px;
+  z-index: 1;
+}
+.decor-planet-large-left img {
+  width: 100%;
+  height: auto;
+}
+
+/* Large Ringed Planet (Top Right) */
+.decor-planet-ringed-right {
+  position: absolute;
+  right: 1.5%;
+  top: 7%;
+  width: 10vw;
+  max-width: 160px;
+  min-width: 75px;
+  z-index: 1;
+}
+.decor-planet-ringed-right img {
+  width: 100%;
+  height: auto;
+}
+
+/* Rocket (Right side) */
+.decor-rocket {
+  position: absolute;
+  right: 2.2%;
+  top: 34%;
+  width: 4.8vw;
+  max-width: 72px;
+  min-width: 36px;
+  z-index: 2;
+  transform: rotate(20deg);
+}
+.decor-rocket img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes rocketBob {
+  0%, 100% {
+    transform: rotate(20deg) translateY(0);
+  }
+  50% {
+    transform: rotate(21deg) translateY(-8px);
+  }
+}
+.float-rocket {
+  animation: rocketBob 4s ease-in-out infinite alternate;
+}
+
+/* City Skyline (Bottom Left) */
+.decor-skyline {
+  position: absolute;
+  left: 1.5%;
+  bottom: 40px;
+  width: 18vw;
+  max-width: 250px;
+  min-width: 110px;
+  z-index: 1;
+  opacity: 0.75;
+}
+.decor-skyline img {
+  width: 100%;
+  height: auto;
+}
+
+/* Clouds (Bottom) */
+.decor-clouds {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 28vh;
+  min-height: 140px;
+  z-index: 1;
+  pointer-events: none;
+}
+.decor-clouds img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+@media (max-width: 900px) {
+  .decor-skyline {
+    display: none;
+  }
+  .decor-planet-small-ringed {
+    display: none;
+  }
+  .decor-planet-large-left {
+    opacity: 0.4;
+  }
+  .decor-planet-ringed-right {
+    width: 14vw;
+  }
+}

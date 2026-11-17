@@ -1,0 +1,148 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(43, 27, 77, 0.45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: modalFadeIn 0.15s ease;
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal-window {
+  width: 100%;
+  max-width: 440px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(45, 42, 74, 0.35);
+  animation: modalPop 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalPop {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.modal-content-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.modal-avatar-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.modal-avatar-img {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-pink);
+  object-fit: cover;
+}
+
+.modal-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.modal-version {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent-pink);
+}
+
+.modal-author {
+  font-size: 12px;
+  color: #7A7292;
+  font-weight: 600;
+}
+
+.modal-divider {
+  height: 1px;
+  background: #E8ECEB;
+}
+
+.modal-text {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #55506E;
+}
+
+.modal-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.modal-tag {
+  background: #F0FAF6;
+  border: 1px solid var(--mint-border);
+  color: var(--mint-text);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 9999px;
+}
+
+.modal-footer-love {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #8C88A6;
+  padding-top: 6px;
+}
+
+.shortcuts-heading {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.shortcuts-table {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.shortcut-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #F0F4F2;
+}
+
+.shortcut-action {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.shortcut-key {
+  background: #F8F9FA;
+  border: 1.5px solid #D1D5DB;
+  border-radius: 6px;
+  padding: 3px 8px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  color: #374151;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}

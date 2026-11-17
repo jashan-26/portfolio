@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" fill="none">
+  <defs>
+    <radialGradient id="ringedPlanetGlow" cx="42%" cy="38%" r="58%">
+      <stop offset="0%" stop-color="#FFEBF3" />
+      <stop offset="50%" stop-color="#F8A7CB" />
+      <stop offset="85%" stop-color="#D96696" />
+      <stop offset="100%" stop-color="#8C3565" />
+    </radialGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0F7" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#FFBED9" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#F285B5" stop-opacity="0.75" />
+    </linearGradient>
+  </defs>
+
+  <g transform="rotate(-22 120 90)">
+    <!-- Back part of ring (behind planet) -->
+    <path d="M 15 90 A 105 28 0 0 1 225 90 A 92 22 0 0 0 28 90 Z" fill="url(#ringGrad)" opacity="0.85" />
+
+    <!-- Planet sphere -->
+    <circle cx="120" cy="90" r="54" fill="url(#ringedPlanetGlow)" />
+    
+    <!-- Planet surface stripe details -->
+    <path d="M 68 82 Q 120 72 172 82 Q 120 88 68 82 Z" fill="#FFFFFF" opacity="0.25" />
+    <path d="M 72 98 Q 120 106 168 98 Q 120 114 72 98 Z" fill="#7A2251" opacity="0.3" />
+
+    <!-- Front part of ring (in front of planet) -->
+    <path d="M 15 90 A 105 28 0 0 0 225 90 A 92 22 0 0 1 28 90 Z" fill="url(#ringGrad)" opacity="0.95" />
+    <!-- Thin outer ring halo -->
+    <ellipse cx="120" cy="90" rx="112" ry="31" stroke="#FFEBF3" stroke-width="2" opacity="0.6" fill="none" />
+  </g>
+</svg>

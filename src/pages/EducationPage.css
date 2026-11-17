@@ -1,0 +1,151 @@
+.education-page-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.education-cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.education-card {
+  background: #FFFFFF;
+  border: 2px solid var(--mint-border);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(45, 42, 74, 0.08);
+}
+
+.edu-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.edu-title-group {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.edu-icon-badge {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: var(--mint-bg);
+  border: 2px solid var(--mint-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.edu-degree {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.edu-field {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--accent-pink);
+  margin-top: 2px;
+}
+
+.edu-inst {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #6C668A;
+  margin-top: 3px;
+}
+
+.edu-metrics-badges {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
+}
+
+.cgpa-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #FEF3C7;
+  border: 1.5px solid #FCD34D;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 13px;
+  color: #92400E;
+}
+
+.status-pill {
+  background: #E8F8F3;
+  border: 1px solid var(--mint-border);
+  padding: 3px 10px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--mint-text);
+}
+
+.duration-pill {
+  font-size: 12px;
+  font-weight: 600;
+  color: #8C88A6;
+  padding: 0 4px;
+}
+
+.edu-divider {
+  height: 1.5px;
+  background: #E8ECEB;
+  margin: 18px 0;
+}
+
+.edu-highlights-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.highlights-title {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.highlights-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.highlights-list li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #4A4468;
+}
+
+.highlights-list li::before {
+  content: '✦';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+}
+
+@media (max-width: 768px) {
+  .edu-metrics-badges {
+    align-items: flex-start;
+  }
+}

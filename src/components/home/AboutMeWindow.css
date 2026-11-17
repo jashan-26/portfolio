@@ -1,0 +1,63 @@
+.about-me-window {
+  width: 100%;
+  height: 100%;
+}
+
+.about-me-window.cursor-pointer {
+  cursor: pointer;
+}
+
+.about-me-inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: clamp(6px, 0.8vh, 12px) clamp(8px, 1vw, 14px);
+  gap: clamp(8px, 1vw, 14px);
+}
+
+.cat-astro-wrap {
+  width: clamp(52px, 5.5vw, 84px);
+  height: clamp(52px, 5.5vw, 84px);
+  border-radius: clamp(8px, 0.7vw, 12px);
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 1.5px solid var(--mint-border);
+  box-shadow: 0 4px 10px rgba(111, 196, 169, 0.25);
+  background: #2B1B4D;
+}
+
+.cat-astro-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-points-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(2px, 0.4vh, 5px);
+  min-width: 0;
+}
+
+.about-point-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  line-height: 1.25;
+}
+
+.diamond-bullet {
+  color: var(--gold);
+  font-size: clamp(8px, 0.7vw, 11px);
+  line-height: 1;
+}
+
+.about-point-text {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: clamp(9px, 0.85vw, 12.5px);
+  color: var(--ink);
+  white-space: nowrap;
+}

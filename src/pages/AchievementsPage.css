@@ -1,0 +1,61 @@
+.achievements-page-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.achievements-grid-lg {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+.achievement-card-lg {
+  background: #FFFDF9;
+  border: 2px solid #F3E6C7;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  box-shadow: 0 4px 14px rgba(242, 182, 50, 0.12);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.achievement-card-lg:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(242, 182, 50, 0.25);
+  border-color: #E2CF96;
+}
+
+.ach-icon-circle-lg {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.ach-details-lg {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ach-title-lg {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1.3;
+}
+
+.ach-desc-lg {
+  font-size: 13px;
+  color: #55506E;
+  line-height: 1.5;
+}

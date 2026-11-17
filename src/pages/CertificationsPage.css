@@ -1,0 +1,105 @@
+.certs-page-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+.cert-card {
+  background: #FFFFFF;
+  border: 2px solid var(--mint-border);
+  border-radius: 14px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 4px 12px rgba(45, 42, 74, 0.06);
+  transition: transform 0.18s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(111, 196, 169, 0.25);
+}
+
+.cert-card.is-placeholder-card {
+  border-style: dashed;
+  border-color: #D3CADF;
+  background: #FCFAFF;
+}
+
+.cert-badge-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cert-icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #FFF1F6;
+  border: 1.5px solid var(--pink-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-todo-badge {
+  font-size: 10px;
+  font-weight: 800;
+  color: #B45309;
+  background: #FEF3C7;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.cert-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1.35;
+}
+
+.cert-issuer {
+  font-size: 13px;
+  font-weight: 600;
+  color: #55506E;
+  flex: 1;
+}
+
+.cert-footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #F0F4F2;
+  padding-top: 10px;
+  margin-top: 6px;
+}
+
+.cert-date {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: #8C88A6;
+  font-weight: 600;
+}
+
+.cert-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent-pink);
+  text-decoration: none;
+}
+.cert-link-btn:hover {
+  text-decoration: underline;
+}

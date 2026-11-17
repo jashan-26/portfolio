@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 110" fill="none">
+  <!-- Cloud -->
+  <g filter="drop-shadow(0 4px 10px rgba(180, 100, 150, 0.25))">
+    <ellipse cx="80" cy="88" rx="65" ry="18" fill="#FFF0F5" />
+    <circle cx="45" cy="82" r="18" fill="#FFE4F0" />
+    <circle cx="80" cy="78" r="22" fill="#FFF0F7" />
+    <circle cx="115" cy="82" r="18" fill="#FFE4F0" />
+    <circle cx="135" cy="88" r="12" fill="#FFD9EB" />
+    <circle cx="25" cy="88" r="12" fill="#FFD9EB" />
+  </g>
+  <!-- Cat Body -->
+  <ellipse cx="82" cy="74" rx="36" ry="22" fill="#FFFFFF" stroke="#2D2A4A" stroke-width="2.5" />
+  <!-- Cat Head -->
+  <circle cx="56" cy="68" r="19" fill="#FFFFFF" stroke="#2D2A4A" stroke-width="2.5" />
+  <!-- Left Ear -->
+  <polygon points="41,54 48,39 57,51" fill="#FFFFFF" stroke="#2D2A4A" stroke-width="2.5" stroke-linejoin="round" />
+  <polygon points="44,53 49,43 54,51" fill="#F7B3CF" />
+  <!-- Right Ear -->
+  <polygon points="59,51 68,39 72,54" fill="#FFFFFF" stroke="#2D2A4A" stroke-width="2.5" stroke-linejoin="round" />
+  <polygon points="62,51 67,43 70,53" fill="#F7B3CF" />
+  <!-- Sleeping Eyes -->
+  <path d="M47 67 Q 51 71 55 67" stroke="#2D2A4A" stroke-width="2" stroke-linecap="round" fill="none" />
+  <path d="M60 67 Q 64 71 68 67" stroke="#2D2A4A" stroke-width="2" stroke-linecap="round" fill="none" />
+  <!-- Nose & Mouth -->
+  <polygon points="57,71 59,71 58,73" fill="#F7B3CF" />
+  <path d="M58 73 Q 55 76 53 74 M58 73 Q 61 76 63 74" stroke="#2D2A4A" stroke-width="1.5" stroke-linecap="round" fill="none" />
+  <!-- Whiskers -->
+  <line x1="42" y1="69" x2="35" y2="68" stroke="#2D2A4A" stroke-width="1.5" stroke-linecap="round" />
+  <line x1="42" y1="72" x2="34" y2="73" stroke="#2D2A4A" stroke-width="1.5" stroke-linecap="round" />
+  <line x1="71" y1="69" x2="78" y2="68" stroke="#2D2A4A" stroke-width="1.5" stroke-linecap="round" />
+  <line x1="71" y1="72" x2="79" y2="73" stroke="#2D2A4A" stroke-width="1.5" stroke-linecap="round" />
+  <!-- Tail -->
+  <path d="M115 72 C 122 75, 122 84, 114 85 C 104 86, 95 82, 92 78" stroke="#2D2A4A" stroke-width="3" stroke-linecap="round" fill="none" />
+  <!-- Cute brown/calico spots on cat back -->
+  <path d="M88 56 C 96 54, 104 60, 102 68 C 96 66, 90 64, 88 56 Z" fill="#E89B77" opacity="0.9" />
+  <path d="M68 53 C 72 52, 76 54, 75 58 C 71 58, 68 56, 68 53 Z" fill="#E89B77" opacity="0.9" />
+  <!-- Pink Blush -->
+  <ellipse cx="46" cy="72" rx="3" ry="2" fill="#FFAEC9" opacity="0.7" />
+  <ellipse cx="69" cy="72" rx="3" ry="2" fill="#FFAEC9" opacity="0.7" />
+  <!-- Floating Z's -->
+  <text x="40" y="32" font-family="'Nunito', sans-serif" font-size="14" font-weight="800" fill="#2D2A4A" opacity="0.85">z</text>
+  <text x="32" y="20" font-family="'Nunito', sans-serif" font-size="16" font-weight="800" fill="#2D2A4A" opacity="0.75">z</text>
+  <text x="24" y="8" font-family="'Nunito', sans-serif" font-size="18" font-weight="800" fill="#2D2A4A" opacity="0.65">z</text>
+</svg>

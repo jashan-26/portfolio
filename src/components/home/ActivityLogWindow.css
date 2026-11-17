@@ -1,0 +1,70 @@
+.activity-log-window {
+  width: 100%;
+  height: 100%;
+}
+
+.terminal-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+  padding: clamp(4px, 0.6vh, 10px) clamp(8px, 1vw, 14px);
+  font-family: var(--font-mono);
+  color: var(--terminal-mint);
+  font-size: clamp(8.5px, 0.72vw, 11px);
+}
+
+.terminal-row {
+  display: flex;
+  align-items: center;
+  gap: clamp(4px, 0.5vw, 8px);
+  width: 100%;
+  line-height: 1.2;
+}
+
+.term-prompt {
+  font-weight: 700;
+  white-space: nowrap;
+  min-width: clamp(65px, 6vw, 85px);
+}
+
+.term-dots {
+  flex: 1;
+  border-bottom: 1.5px dotted #3D4F75;
+  height: 1px;
+  margin: 0 4px;
+}
+
+.term-blocks-wrap {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2px 3px;
+  border-radius: 3px;
+  border: 1px solid #2B3A5A;
+}
+
+.term-block {
+  width: clamp(4px, 0.45vw, 6px);
+  height: clamp(8px, 0.9vh, 12px);
+  border-radius: 1px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.term-block.is-filled {
+  background-color: var(--terminal-mint);
+  box-shadow: 0 0 5px rgba(127, 227, 195, 0.6);
+}
+
+.term-block.is-empty {
+  background-color: #232D48;
+}
+
+.term-percent {
+  font-weight: 700;
+  min-width: clamp(28px, 2.5vw, 36px);
+  text-align: right;
+  color: #B5F3E0;
+}
